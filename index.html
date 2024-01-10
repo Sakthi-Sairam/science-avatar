@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science BOT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="content">
+      <h1>Smart Assistant for Science</h1>
+        <div class="profile">
+          <div class="avatar"><img src="avatar.png"></div>
+          <div class="avatar" id="popup">
+            <p id="popupText"></p>
+        </div>
+        </div>
+        <button type="button" onclick="runSpeechRecognition()">Talk with avatar</button> &nbsp; <span id="action"></span>
+        <div id="output" class="hide"></div>
+      </div>
+      <script src="script.js"></script>
+      <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+      <script>
+        window.botpressWebChat.init({
+          "composerPlaceholder": "To Start send \"HI\"",
+          "botConversationDescription": "Science Helper BOT",
+          "botId": "c3bc8974-b328-4455-85e8-c97922b2912c",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "c3bc8974-b328-4455-85e8-c97922b2912c",
+          "webhookId": "3a30cb18-ffc5-47ea-ba1b-f7f636a863c3",
+          "lazySocket": true,
+          "themeName": "prism",
+          "botName": "Science BOT",
+          "avatarUrl": "https://i.postimg.cc/MZtNCVDv/5d4a8d4a-d7a0-42d9-8fb7-6b42f331b199.jpg",
+          "frontendVersion": "v1",
+          "useSessionStorage": true,
+          "enableConversationDeletion": true,
+          "theme": "prism",
+          "themeColor": "#2563eb"
+        });
+      </script>
+</body>
+</html>
