@@ -46,7 +46,7 @@ alert('Text-to-speech is not supported in this browser. Please use a modern brow
 // openai api------------------
 async function getChatGPTResponse(userInput) {
     var output = document.getElementById("output");
-    const apiKey = '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'; // actual API key
+    const apiKey = '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'; // actual API key
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
